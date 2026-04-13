@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.7.2:1", "", "Opening doors", "EARoot/EA7/EA2/EA265.htm", "7.png", "E127", "0", "", "UseCase0","{A8CB0114-75FF-0C11-8EFD-B34B71B36C23}");
+tocTab[tocTab.length] = new Array("0.7.2:2", "", "Use Case B", "EARoot/EA7/EA2/EA266.htm", "7.png", "E128", "0", "", "UseCase0","{B71BB3DA-DE73-0179-B8DD-81DA5EDDBDE6}");

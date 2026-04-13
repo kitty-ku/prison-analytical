@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("0.8:1", "", "Starter Sequence Diagram", "EARoot/EA8/EA267.htm", "185.png", "6", "0", "", "Sequence diagram0","{8961AC01-DBA5-DBE7-9BFF-06C5B06E4FCE}");
+tocTab[tocTab.length] = new Array("0.8:2", "", "Actor A", "EARoot/EA8/EA270.htm", "6.png", "E178", "0", "", "Actor0","{93AF3439-0234-1FE5-8AF6-0ABEED7DB0AB}");
+tocTab[tocTab.length] = new Array("0.8:3", "", "ControlPanel", "EARoot/EA8/EA271.htm", "57.png", "E179", "0", "", "Sequence0","{9B889433-FDDD-E89E-A83A-A440D795D204}");
+tocTab[tocTab.length] = new Array("0.8:4", "", "InteractionFragment1", "EARoot/EA8/EA272.htm", "101.png", "E182", "0", "", "InteractionFragment0","{A14F2E55-0B6D-FEA4-8994-B960B60E469D}");
+tocTab[tocTab.length] = new Array("0.8:5", "", "OSP", "EARoot/EA8/EA273.htm", "57.png", "E185", "0", "", "Sequence0","{AEBE448F-8199-F5B7-8DE3-6B23C0C6FBD4}");
+tocTab[tocTab.length] = new Array("0.8:6", "", "SZJP", "EARoot/EA8/EA274.htm", "57.png", "E184", "0", "", "Sequence0","{8046595A-38E3-A413-840E-57CB59C9DE89}");
+tocTab[tocTab.length] = new Array("0.8:7", "", "SZM", "EARoot/EA8/EA275.htm", "57.png", "E187", "0", "", "Sequence0","{80B2BCC2-F4E9-88AD-81FF-2DA69E93404F}");
+tocTab[tocTab.length] = new Array("0.8:8", "", "User", "EARoot/EA8/EA276.htm", "6.png", "E186", "0", "", "Actor0","{8AD9327B-F842-2CF9-8FF5-CECAAC82EA52}");
+tocTab[tocTab.length] = new Array("0.8:9", "", "Violation Priority", "EARoot/EA8/EA277.htm", "101.png", "E183", "0", "", "InteractionFragment0","{B29D980E-41DE-90A1-8BC5-FB4FFA2E8585}");
+tocTab[tocTab.length] = new Array("0.8:10", "", "ViolationLog", "EARoot/EA8/EA278.htm", "57.png", "E180", "0", "", "Sequence0","{92DB74AC-E08E-54B1-B370-9F20A5931F0E}");
+tocTab[tocTab.length] = new Array("0.8:11", "", "ViolationSignaller", "EARoot/EA8/EA279.htm", "136.png", "E181", "0", "", "MessageEndpoint0","{963668CF-694E-126B-A2DE-2186DB94D7C6}");

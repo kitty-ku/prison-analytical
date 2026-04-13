@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.1", "1", "Administrator Communication Diagram", "EARoot/EA1/EA3.htm", "4.png", "", "", "{98BEA52D-D020-BA02-880B-2BC2BDFAF8B2}", "Package");
+tocTab[tocTab.length] = new Array("0.2", "1", "AttendanceTerminal Sequence Diagram", "EARoot/EA2/EA17.htm", "4.png", "", "", "{93E6B283-62F6-7F81-8DA9-AE0EC897C4EA}", "Package");
+tocTab[tocTab.length] = new Array("0.3", "1", "DoorTerminal Sequence Diagram", "EARoot/EA3/EA32.htm", "4.png", "", "", "{9C430283-19AA-B888-9885-54D97FDD8883}", "Package");
+tocTab[tocTab.length] = new Array("0.4", "1", "Starter Activity Diagram", "EARoot/EA4/EA55.htm", "4.png", "", "", "{988EBE94-614A-7901-A052-00D1C2EF11BD}", "Package");
+tocTab[tocTab.length] = new Array("0.5", "1", "Starter Class Diagram", "EARoot/EA5/EA127.htm", "34.png", "", "", "{BCF4BD99-B6DC-41fa-B991-BB2E241D6167}", "Package");
+tocTab[tocTab.length] = new Array("0.6", "1", "Starter State Machine", "EARoot/EA6/EA188.htm", "4.png", "", "", "{9EE4685A-5655-9449-B03F-411C22C84B79}", "Package");
+tocTab[tocTab.length] = new Array("0.7", "1", "Starter Use Case Model", "EARoot/EA7/EA221.htm", "34.png", "", "", "{95D23A47-8486-15A9-8DA9-7093D30A5E54}", "Package");
+tocTab[tocTab.length] = new Array("0.8", "1", "Violation Sequence Diagram", "EARoot/EA8/EA269.htm", "4.png", "", "", "{A7E7D2AF-C039-8236-8C35-A0EC080F11DA}", "Package");

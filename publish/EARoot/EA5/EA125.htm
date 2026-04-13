@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Starter Class Diagram</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Starter Class Diagram </h1>
+			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../index.htm">Model</a> / <a href="EA127.htm">Starter Class Diagram</a> / <a href="EA125.htm">Starter Class Diagram</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA125.htm">Starter Class Diagram</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA132.htm">Administrator</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA134.htm">AttendableEvent</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA135.htm">AttendanceTerminal</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA138.htm">Cleaning crew</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA139.htm">Configuration</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA140.htm">ConfigurationManager</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA141.htm">ConfigurationManager</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA142.htm">ControlPanel</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA143.htm">DoorOpeninvgViolation</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA180.htm">DoorTerminal</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA181.htm">Doorway</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA144.htm">EmergencyDoorOpeningViolation</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA146.htm">FailedLoginViolation</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA147.htm">Guard</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA148.htm">Inmate</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA149.htm">InvalidDoorSequenceViolation</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA150.htm">Maintenance worker</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA151.htm">MarkAttendanceRequest</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA152.htm">MissingAttendanceViolation</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA153.htm">Office worker</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA154.htm">OpenDoorRequest</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA155.htm">OpeningAuthorizer</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA156.htm">OSP</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA157.htm">Privilege</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA159.htm">Role</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA160.htm">RollCallAttendanceTerminal</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA161.htm">Security card</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA162.htm">SecurityRole</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA163.htm">SZJP</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA164.htm">SZM</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA165.htm">Terminal</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA167.htm">TerminalInteractionRequest</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA168.htm">User</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA169.htm">Users</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA171.htm">VideoFootage</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA172.htm">VideoFootage</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA173.htm">VideoRecordController</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA174.htm">Violation</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA175.htm">ViolationController</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA176.htm">ViolationLog</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA177.htm">ViolationLog</a></li>
+<li><img src="../../images/5.png" alt="Class"/> <a href="EA179.htm">WorkplaceAttendanceTerminal</a></li>
+<li><img src="../../images/8.png" alt="Interface"/> <a href="EA136.htm">CallableViolation</a></li>
+<li><img src="../../images/8.png" alt="Interface"/> <a href="EA170.htm">VerifiableAttendance</a></li>
+<li><img src="../../images/58.png" alt="Association"/> <a href="EA133.htm">Association1</a></li>
+<li><img src="../../images/230.png" alt="DataType"/> <a href="EA137.htm">CardID</a></li>
+<li><img src="../../images/230.png" alt="DataType"/> <a href="EA166.htm">TerminalID</a></li>
+<li><img src="../../images/247.png" alt="Enumeration"/> <a href="EA178.htm">ViolationPriority</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA126.png" usemap="#EA126" width="1925" height="1404" border="0" />
+
+<MAP NAME="EA126">
+<area shape="rect" coords="429,764,564,906" href="EA178.htm" target="_self">
+<area shape="rect" coords="836,659,999,779" href="EA134.htm" target="_self">
+<area shape="rect" coords="1167,402,1350,455" href="EA151.htm" target="_self">
+<area shape="rect" coords="1163,567,1340,672" href="EA167.htm" target="_self">
+<area shape="rect" coords="1044,984,1425,1206" href="EA141.htm" target="_self">
+<area shape="rect" coords="1373,759,1508,864" href="EA157.htm" target="_self">
+<area shape="rect" coords="1550,759,1685,864" href="EA159.htm" target="_self">
+<area shape="rect" coords="1523,974,1712,1215" href="EA139.htm" target="_self">
+<area shape="rect" coords="791,413,1044,519" href="EA135.htm" target="_self">
+<area shape="rect" coords="519,333,713,438" href="EA165.htm" target="_self">
+<area shape="rect" coords="15,980,185,1085" href="EA172.htm" target="_self">
+<area shape="rect" coords="585,947,834,1098" href="EA177.htm" target="_self">
+<area shape="rect" coords="1118,1284,1386,1389" href="EA142.htm" target="_self">
+<area shape="rect" coords="192,255,357,360" href="EA143.htm" target="_self">
+<area shape="rect" coords="726,1277,861,1323" href="EA156.htm" target="_self">
+<area shape="rect" coords="557,1277,693,1323" href="EA163.htm" target="_self">
+<area shape="rect" coords="239,1275,377,1320" href="EA164.htm" target="_self">
+<area shape="rect" coords="287,150,501,192" href="EA144.htm" target="_self">
+<area shape="rect" coords="62,150,254,192" href="EA149.htm" target="_self">
+<area shape="rect" coords="186,438,366,491" href="EA152.htm" target="_self">
+<area shape="rect" coords="1167,311,1350,363" href="EA154.htm" target="_self">
+<area shape="rect" coords="1745,303,1908,425" href="EA161.htm" target="_self">
+<area shape="rect" coords="1743,651,1910,786" href="EA168.htm" target="_self">
+<area shape="rect" coords="1746,1284,1910,1389" href="EA132.htm" target="_self">
+<area shape="rect" coords="210,755,410,944" href="EA174.htm" target="_self">
+<area shape="rect" coords="785,257,1044,363" href="EA180.htm" target="_self">
+<area shape="rect" coords="827,15,1002,159" href="EA181.htm" target="_self">
+<area shape="rect" coords="197,1226,885,1347" href="EA145.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Starter Class Diagram : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">18 lis 2025 10:33:01</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">13 kwi 2026 15:42:14</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">studentmkzl</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{6AC7F898-0C01-4f95-8520-768330AACA8E}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Starter State Machine</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Starter State Machine </h1>
+			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../index.htm">Model</a> / <a href="EA188.htm">Starter State Machine</a> / <a href="EA190.htm">Class A</a> / <a href="EA211.htm">State Machine A</a> / <a href="EA184.htm">Starter State Machine</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../images/183.png" alt="Diagram"/> <a href="EA184.htm">Starter State Machine</a></li>
+<li><img src="../../images/20.png" alt="State"/> <a href="EA193.htm">DoorLeftOpen</a></li>
+<li><img src="../../images/20.png" alt="State"/> <a href="EA194.htm">DoorLeftOpen</a></li>
+<li><img src="../../images/20.png" alt="State"/> <a href="EA195.htm">EmergencyOpen</a></li>
+<li><img src="../../images/20.png" alt="State"/> <a href="EA202.htm">NormalOperation</a></li>
+<li><img src="../../images/20.png" alt="State"/> <a href="EA203.htm">PhysicalStateUnknown</a></li>
+<li><img src="../../images/20.png" alt="State"/> <a href="EA204.htm">State1</a></li>
+<li><img src="../../images/20.png" alt="State"/> <a href="EA205.htm">State2</a></li>
+<li><img src="../../images/20.png" alt="State"/> <a href="EA206.htm">State3</a></li>
+<li><img src="../../images/97.png" alt="StateNode"/> <a href="EA196.htm">EntryPoint</a></li>
+<li><img src="../../images/97.png" alt="StateNode"/> <a href="EA197.htm">History</a></li>
+<li><img src="../../images/98.png" alt="StateNode"/> <a href="EA207.htm">Synch</a></li>
+<li><img src="../../images/98.png" alt="StateNode"/> <a href="EA208.htm">Terminate</a></li>
+<li><img src="../../images/56.png" alt="StateNode"/> <a href="EA191.htm">Choice</a></li>
+<li><img src="../../images/56.png" alt="StateNode"/> <a href="EA192.htm">Choice</a></li>
+<li><img src="../../images/68.png" alt="StateNode"/> <a href="EA198.htm">Initial</a></li>
+<li><img src="../../images/68.png" alt="StateNode"/> <a href="EA199.htm">Initial</a></li>
+<li><img src="../../images/68.png" alt="StateNode"/> <a href="EA200.htm">Junction</a></li>
+<li><img src="../../images/195.png" alt="StateMachine"/> <a href="EA201.htm">NormalOperation</a></li>
+<li><img src="../../images/68.png" alt="StateNode"/> <a href="EA209.htm">Initial</a></li>
+<li><img src="../../images/69.png" alt="StateNode"/> <a href="EA210.htm">Final</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA185.png" usemap="#EA185" width="1618" height="666" border="0" />
+
+<MAP NAME="EA185">
+<area shape="rect" coords="305,222,344,273" href="EA192.htm" target="_self">
+<area shape="rect" coords="815,561,995,651" href="EA194.htm" target="_self">
+<area shape="rect" coords="1424,234,1604,324" href="EA195.htm" target="_self">
+<area shape="rect" coords="110,15,140,45" href="EA199.htm" target="_self">
+<area shape="rect" coords="15,203,233,293" href="EA203.htm" target="_self">
+<area shape="rect" coords="872,207,1052,297" href="EA218.htm" target="_self">
+<area shape="rect" coords="564,329,744,419" href="EA217.htm" target="_self">
+<area shape="rect" coords="383,66,1259,491" href="EA202.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Starter State Machine : StateMachine diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">13 sty 2026 10:56:57</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">13 sty 2026 11:27:41</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">studentmkzl</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{A4E1C413-2D5A-D4E0-B4B6-876711892638}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

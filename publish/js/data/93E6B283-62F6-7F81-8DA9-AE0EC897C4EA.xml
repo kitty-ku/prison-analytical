@@ -1,0 +1,13 @@
+tocTab[tocTab.length] = new Array("0.2:1", "", "Starter Sequence Diagram", "EARoot/EA2/EA15.htm", "185.png", "5", "0", "", "Sequence diagram0","{842FFD84-1BC3-A2E8-BBCC-B6B1B8267F48}");
+tocTab[tocTab.length] = new Array("0.2:2", "", "Administrator", "EARoot/EA2/EA18.htm", "6.png", "E169", "0", "", "Actor0","{9336EC1E-6BE4-CB76-8127-829B99A3E168}");
+tocTab[tocTab.length] = new Array("0.2:3", "", "Attend", "EARoot/EA2/EA19.htm", "101.png", "E173", "0", "", "InteractionFragment0","{8475FD76-392F-3CBB-9999-5CA55B88D404}");
+tocTab[tocTab.length] = new Array("0.2:4", "", "Attendance", "EARoot/EA2/EA20.htm", "101.png", "E172", "0", "", "InteractionFragment0","{9D684943-6106-2322-B3AB-BFBD17E022B4}");
+tocTab[tocTab.length] = new Array("0.2:5", "", "AttendanceTerminal", "EARoot/EA2/EA21.htm", "57.png", "E167", "0", "", "Sequence0","{9BA6BE4D-6064-460D-9A3A-6EBEC3EBCBD5}");
+tocTab[tocTab.length] = new Array("0.2:6", "", "Attended", "EARoot/EA2/EA22.htm", "101.png", "E174", "0", "", "InteractionFragment0","{B1A39F2A-FAA8-D775-AF34-A69A998C201D}");
+tocTab[tocTab.length] = new Array("0.2:7", "", "EventManager", "EARoot/EA2/EA23.htm", "57.png", "E168", "0", "", "Sequence0","{8397508A-CB4F-A35A-8BDB-60434334A856}");
+tocTab[tocTab.length] = new Array("0.2:8", "", "InteractionFragment1", "EARoot/EA2/EA24.htm", "101.png", "E177", "0", "", "InteractionFragment0","{8FC3FEA9-435A-F027-8AAE-5973219B2756}");
+tocTab[tocTab.length] = new Array("0.2:9", "", "Missing Attendants", "EARoot/EA2/EA25.htm", "101.png", "E176", "0", "", "InteractionFragment0","{B0288883-DB9E-5416-BA38-E9E5C6336807}");
+tocTab[tocTab.length] = new Array("0.2:10", "", "No Event", "EARoot/EA2/EA26.htm", "101.png", "E171", "0", "", "InteractionFragment0","{99FF5D45-3EF7-F983-83DE-3FC796025E99}");
+tocTab[tocTab.length] = new Array("0.2:11", "", "User", "EARoot/EA2/EA27.htm", "6.png", "E166", "0", "", "Actor0","{BF45B00E-15E4-66B1-A46C-CF68DCAB8109}");
+tocTab[tocTab.length] = new Array("0.2:12", "", "User", "EARoot/EA2/EA28.htm", "6.png", "E170", "0", "", "Actor0","{9BA1BA44-49FA-23AC-BC4A-BBB3B99D9A19}");
+tocTab[tocTab.length] = new Array("0.2:13", "", "ViolationLog", "EARoot/EA2/EA29.htm", "57.png", "E175", "0", "", "Sequence0","{8694966B-46AF-E85C-978B-11EE3AED50C3}");
